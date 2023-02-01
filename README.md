@@ -7,6 +7,17 @@
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
 </p>
 
+## Restoring project
+
+1. Download (clone) current branch   
+2. Copy or move ".example.env" to ".env"   
+3. Fill data for database, sms and mail connections   
+4. Execute command "php artisan migrate" from project root directory   
+5. Copy file "countries.json" into  "/storage/app/public/countries.json"
+6. Execute command "php artisan import:countries" from project root directory
+7. Execute command "php artisan serve" from project root directory
+8. Open browser and go to http://127.0.0.1:8000/register
+
 ## About Laravel
 
 Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
